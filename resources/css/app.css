@@ -146,4 +146,39 @@
     .card {
         @apply rounded-lg border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900;
     }
+
+    /* Flash banners */
+    .alert {
+        @apply flex items-center gap-2 rounded-md border px-4 py-3 text-sm;
+    }
+    .alert-success {
+        @apply border-success-border bg-success-bg text-success-fg dark:border-success-dark-border dark:bg-success-dark-bg dark:text-success-dark-fg;
+    }
+    .alert-error {
+        @apply border-danger-border bg-danger-bg text-danger-fg dark:border-danger-dark-border dark:bg-danger-dark-bg dark:text-danger-dark-fg;
+    }
+
+    /* Table */
+    .table-container {
+        @apply overflow-x-auto rounded-lg border border-neutral-200 dark:border-neutral-800;
+    }
+    .table {
+        @apply w-full text-sm;
+
+        thead {
+            @apply bg-neutral-100 dark:bg-neutral-900;
+        }
+        th {
+            @apply px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400;
+        }
+        tbody tr {
+            @apply border-t border-neutral-200 transition-colors hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900/60;
+        }
+        td {
+            @apply px-4 py-3 align-middle text-neutral-900 dark:text-neutral-50;
+        }
+    }
+    .table-empty {
+        @apply py-12 text-center text-sm text-neutral-500 dark:text-neutral-400;
+    }
 }
