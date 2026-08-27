@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /* Fonts */
+    --font-display: 'Archivo', system-ui, sans-serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    /* Brand — light */
+    --color-brand-50: #FEF2F2;
+    --color-brand-100: #FEE2E2;
+    --color-brand-500: #EF4A40;
+    --color-brand-600: #D42A22;
+    --color-brand-700: #A81E18;
+    --color-brand-800: #7F1611;
+    --color-brand: #D42A22;
+
+    /* Brand — dark (manual dark: variants, no auto-switch) */
+    --color-brand-dark-tint: #2A0C0A;
+    --color-brand-dark-ring: #45120F;
+    --color-brand-dark-solid: #D8281F;
+    --color-brand-dark-accent: #F0433A;
+    --color-brand-dark-hover: #EF3A30;
+    --color-brand-dark-on-tint: #FF8078;
+
+    /* Neutrals */
+    --color-neutral-50: #FAFAFA;
+    --color-neutral-100: #F4F4F5;
+    --color-neutral-200: #E4E4E7;
+    --color-neutral-300: #D4D4D8;
+    --color-neutral-400: #A1A1AA;
+    --color-neutral-500: #71717A;
+    --color-neutral-700: #3F3F46;
+    --color-neutral-800: #27272A;
+    --color-neutral-850: #1F1F23;
+    --color-neutral-900: #18181B;
+    --color-neutral-950: #0A0A0A;
+
+    /* Success */
+    --color-success: #16A34A;
+    --color-success-fg: #15803D;
+    --color-success-bg: #F0FDF4;
+    --color-success-border: #BBF7D0;
+    --color-success-dark-dot: #22C55E;
+    --color-success-dark-fg: #4ADE80;
+    --color-success-dark-bg: #0B2A16;
+    --color-success-dark-border: #14532D;
+
+    /* Warning */
+    --color-warning: #D97706;
+    --color-warning-fg: #B45309;
+    --color-warning-bg: #FFFBEB;
+    --color-warning-border: #FDE68A;
+    --color-warning-dark-dot: #F59E0B;
+    --color-warning-dark-fg: #FBBF24;
+    --color-warning-dark-bg: #2B1C05;
+    --color-warning-dark-border: #78350F;
+
+    /* Danger */
+    --color-danger: #DC2626;
+    --color-danger-fg: #B91C1C;
+    --color-danger-bg: #FEF2F2;
+    --color-danger-border: #FECACA;
+    --color-danger-dark-dot: #EF4444;
+    --color-danger-dark-fg: #F87171;
+    --color-danger-dark-bg: #2A0C0A;
+    --color-danger-dark-border: #7F1D1D;
+
+    /* Radius — modest, industrial */
+    --radius: 6px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+
+    /* Shadows — thin depth only, no glow */
+    --shadow-sm: 0 1px 2px rgba(24, 24, 27, 0.05);
+    --shadow-md: 0 4px 12px rgba(24, 24, 27, 0.08), 0 1px 2px rgba(24, 24, 27, 0.04);
+    --shadow-none: none;
+}
